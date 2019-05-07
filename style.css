@@ -1,0 +1,64 @@
+body {
+    margin:0;
+    padding: 0;
+}
+.header-content {
+    background-color: #16a085;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+.header-content .avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+}
+.header-content .name {
+    display: inline-block;
+}
+.header-content .avatar img {
+    border-radius: 50%;
+    width: 100%;
+}
+.poster img {
+    width: 100%;
+}
+
+.information{
+    display: flex;
+}
+.information .item-container {
+    flex: 1;
+}
+.information .introduce {
+    padding: 0 15px;
+}
+.information .systems {
+    padding: 0 15px;
+}
+.title {
+    text-align: center;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+.name:hover {
+    animation-name: bounce;
+}
