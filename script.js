@@ -1,11 +1,5 @@
-const Person = function(name, age) {
-    this.name = name;
-    this.age = age;
+var eleVideo = document.getElementById("video-wrapper")
+var btnOpenVideo = document.getElementById("btnVideoId")
+btnOpenVideo.onclick = function() {
+    eleVideo.style.display = "block";
 }
-
-Person.prototype.demo = function() {
-    console.log(`this is ${this.name}`);
-}
-
-const test = new Person('kuka', 23);
-test.demo();
